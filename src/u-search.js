@@ -243,7 +243,10 @@ class uSearch extends LitElement {
   }
 
   /* TODO: SLIDE 80 */
-
+  /**
+  * handles search button click
+  * @param {event} e event 
+  */
   onClick(e) {
     if (this.toggles && this.toggled && this.input !== '') { 
       this.fireSearch(); 
@@ -256,7 +259,10 @@ class uSearch extends LitElement {
     }
   }
   /* TODO: SLIDE 81 */
-
+  /**
+  * handles search button click
+  * @event search  
+  */
   fireSearch() {
     this.dispatchEvent(
       new CustomEvent('search', {

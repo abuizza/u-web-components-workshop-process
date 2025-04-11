@@ -1,3 +1,4 @@
+import './'
 /* TODO: SLIDE 31 */
 import './u-alerts.js';
 import './u-card.js';
