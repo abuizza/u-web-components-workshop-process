@@ -342,7 +342,7 @@
         }
         #search-text-input {
           color: var(--input-color,currentColor);
-          /* background-color: var(--input-background-color,transparent); */
+          background-color: var(--input-background-color,transparent);
           line-height: var(--internal-height,24px);
           padding: var(--internal-padding,8px);
           border: var(--input-border,none);
@@ -534,8 +534,15 @@ u-mark {
   }
 }
       
-        `]}static get properties(){return{}}render(){return R`
+        `]}static get properties(){return{...ft.properties}}render(){return R`
       <!-- TODO: SLIDE 111 -->
+       <u-mark 
+       ?invert="${this.invert}"
+       ?grayscale="${this.grayscale}"
+       >
+
+
+       </u-mark>
       <ul>
         <!-- TODO: SLIDE 51 -->
          <li>

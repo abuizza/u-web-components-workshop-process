@@ -1,6 +1,7 @@
 /* TODO: SLIDE 42 */
 import { LitElement, css, html } from 'lit';
 /* TODO SLIDE 110.1 */
+import { UMark } from './u-mark.js'
 
 /* TODO: SLIDE 43 */
 /**
@@ -90,6 +91,8 @@ u-mark {
   static get properties() {
     return {
       /* TODO: SLIDE 110.2 */
+
+      ...UMark.properties,
     };
   }
 
@@ -100,6 +103,13 @@ u-mark {
   render() {
     return html`
       <!-- TODO: SLIDE 111 -->
+       <u-mark 
+       ?invert="${this.invert}"
+       ?grayscale="${this.grayscale}"
+       >
+
+
+       </u-mark>
       <ul>
         <!-- TODO: SLIDE 51 -->
          <li>
